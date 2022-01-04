@@ -23,7 +23,7 @@ export default function Index({ title, skills, img, description, linkPage, linkG
                         <button onClick={toggle}>
                             <span className="fas fa-external-link-alt" aria-hidden="true"></span> Ver màs
                         </button>
-                        <a href={linkGit} target="_blank">
+                        <a href={linkGit} target="_blank" rel="noreferrer">
                             <span className="fas fa-code" aria-hidden="true"></span>  Vér Codigo
                         </a>
                     </div>
@@ -35,7 +35,7 @@ export default function Index({ title, skills, img, description, linkPage, linkG
                         <button onClick={toggle}>
                             <span className="fas fa-external-link-alt" aria-hidden="true"></span>
                         </button>
-                        <a href={linkGit} target="_blank">
+                        <a href={linkGit} target="_blank" rel="noreferrer">
                             <span className="fas fa-code" aria-hidden="true"></span>
                         </a>
                     </div>

@@ -297,7 +297,7 @@ section#about-me .about-me-content-total {
 section#about-me .about-me-content__text .about-me-content__text__info {
   display: flex;
   flex-direction: column;
-  align-items: end;
+  align-items: flex-end;
   gap: 10px;
 }
 
@@ -415,7 +415,7 @@ section#skills .skills-content__carousel-items__tools {
   text-orientation: upright;
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: flex-start;
   font-size: 1.2rem;
   justify-content: space-evenly;
   height: 30%;
@@ -563,7 +563,7 @@ section#portfolio .portfolio-items .item .overlay-mobile .portfolio-items__item_
 .modal-project .modal-project__auth {
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: flex-start;
 }
 
 .modal-project a,

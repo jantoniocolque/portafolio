@@ -186,7 +186,7 @@ function App() {
                 </div>
               </div>
               <div className='about-me-content__controls'>
-                <a href={cv} target="_blank" className='about-me-content__controls__btn-cv'>Ver curriculum</a>
+                <a href={cv} target="_blank" rel="noreferrer" className='about-me-content__controls__btn-cv'>Ver curriculum</a>
               </div>
             </div>
           </div>
@@ -462,11 +462,11 @@ function App() {
                     <div className="contact-content">
                         <p>Si queres trabajar conmigo, o tenes alguna propuesta contàctame por alguno de estos medios. Todo comentario es bienvenido.</p>
                         <div className="contact-content__social-networks mb-5">
-                            <div><a className="contact-content__social-networks__item" target="_blank" href="https://linkedin.com/in/jantoniocolque"><i className="fab fa-linkedin"></i>/jantoniocolque</a> </div>
-                            <div><a className="contact-content__social-networks__item" target="_blank" href="https://github.com/jantoniocolque"><i className="fab fa-github"></i>/jantoniocolque</a></div>
-                            <div><a className="contact-content__social-networks__item" target="_blank" href="mailto:jantoniocolque@gmail.com"><i className="fas fa-envelope"></i>jantoniocolque@gmail.com</a> </div>
-                            <div><a className="contact-content__social-networks__item" target="_blank" href="https://api.whatsapp.com/send?phone=+541136575990"><i className="fab fa-whatsapp"></i>+54 11 3657-5990</a> </div>
-                            <div><a className="contact-content__social-networks__item" target="_blank" href="https://instagram.com/dev_jhona"><i className="fab fa-instagram"></i>@dev_jhona</a> </div>
+                            <div><a className="contact-content__social-networks__item" rel="noreferrer" target="_blank" href="https://linkedin.com/in/jantoniocolque"><i className="fab fa-linkedin"></i>/jantoniocolque</a> </div>
+                            <div><a className="contact-content__social-networks__item" rel="noreferrer" target="_blank" href="https://github.com/jantoniocolque"><i className="fab fa-github"></i>/jantoniocolque</a></div>
+                            <div><a className="contact-content__social-networks__item" rel="noreferrer" target="_blank" href="mailto:jantoniocolque@gmail.com"><i className="fas fa-envelope"></i>jantoniocolque@gmail.com</a> </div>
+                            <div><a className="contact-content__social-networks__item" rel="noreferrer" target="_blank" href="https://api.whatsapp.com/send?phone=+541136575990"><i className="fab fa-whatsapp"></i>+54 11 3657-5990</a> </div>
+                            <div><a className="contact-content__social-networks__item" rel="noreferrer" target="_blank" href="https://instagram.com/dev_jhona"><i className="fab fa-instagram"></i>@dev_jhona</a> </div>
                         </div>
                     </div>
                 </div>

@@ -1,5 +1,4 @@
-import { useEffect } from 'react';
-import { useState } from 'react';
+
 import Portal from './Portal';
 import "./style.css"
 export default function ModalProject(props) {
@@ -19,7 +18,7 @@ export default function ModalProject(props) {
                                         {children}
                                     </div>
                                     <div className='modal-project__btns'>
-                                        <a href={link} target="_blank">
+                                        <a href={link} target="_blank" rel="noreferrer">
                                             <span className="fas fa-external-link-alt" aria-hidden="true"></span> Ver página
                                         </a>
                                         <button onClick={toggle}>Cerrar</button>

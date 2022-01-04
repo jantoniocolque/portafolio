@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { Container } from 'react-bootstrap';
-import { Link, Events } from "react-scroll";
+import { Link } from "react-scroll";
 
 export default function Index({ theme }) {
     useEffect(() => {
