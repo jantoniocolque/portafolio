@@ -111,7 +111,7 @@ function App() {
                   <h2 className="name">Jhonathan</h2>
                   <h2 className="surname">Antonio</h2>
                   <div className="home-title__icons">
-                    <a className="" href="https://linkedin.com/in/jantoniocolque"><i className="fab fa-linkedin"></i></a>
+                    <a className="" href="https://linkedin.com/in/jantoniocolque" rel="noreferrer" target="_blank"><i className="fab fa-linkedin"></i></a>
                     <a className="" href="https://github.com/jantoniocolque"><i className="fab fa-github"></i></a>
                     <a className="" href="mailto:jantoniocolque@gmail.com"><i className="fas fa-envelope"></i></a>
                   </div>

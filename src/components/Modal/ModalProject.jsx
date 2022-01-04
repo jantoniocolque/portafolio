@@ -53,7 +53,7 @@ const styles = {
         padding: "1.5rem",
         boxShadow: "2px 2px 10px rgba(0,0,0,0.3)",
         zIndex: 10,
-        maxWidth: "55%",
+        maxWidth: "65%",
         color: "var(--primary)",
         animation: "gradient 15s ease infinite",
     },

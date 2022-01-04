@@ -95,12 +95,16 @@ section#home .home-content .content-logo {
 }
 
 section#home .home-title__icons {
-  width: 4%;
+  width: 7%;
   margin-top: 25px;
   display: flex;
   flex-direction: column;
   gap: .4rem;
   font-size: 1.6rem;
+}
+
+section#home .home-title__icons a {
+  z-index: 1;
 }
 
 section#home .home-title__icons i:hover {
