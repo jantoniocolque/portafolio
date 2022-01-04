@@ -1,9 +1,14 @@
-
+import { useEffect } from 'react';
 import Portal from './Portal';
 import "./style.css"
 export default function ModalProject(props) {
     const { children, toggle, active, title, description, link } = props;
-
+    useEffect(() => {
+        if (active) {
+            window.document.body.style.overflow = 'hidden';
+        }
+        return () => window.document.body.style.overflow = 'unset';
+    }, [active])
     return (
         <Portal>
             {
@@ -43,19 +48,22 @@ const styles = {
         height: '100%',
         display: 'flex',
         justifyContent: 'center',
-        alignItems: 'center'
+        alignItems: 'center',
+
     },
     window: {
         position: "relative",
         background: 'linear-gradient(-45deg, var(--primary),var(--light-secundary),var(--orange), var(--light))',
         backgroundSize: "400% 400%",
         borderRadius: 20,
-        padding: "1.5rem",
         boxShadow: "2px 2px 10px rgba(0,0,0,0.3)",
         zIndex: 10,
-        maxWidth: "65%",
+        maxWidth: "70%",
+        padding: "2rem",
         color: "var(--primary)",
         animation: "gradient 15s ease infinite",
+        overflow: "auto",
+        maxHeight: "80%"
     },
     background: {
         position: "absolute",
