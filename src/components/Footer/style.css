@@ -1,0 +1,145 @@
+footer {
+    background-color: var(--orange);
+    color: white;
+    text-align: center;
+    display: block;
+    position: relative;
+    padding-top: 15%;
+    padding-bottom: 30%;
+}
+
+footer .footer-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+footer .footer__title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+footer .footer__social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    z-index: 0;
+}
+
+footer .footer__social i {
+    font-size: 1.5rem;
+    color: white;
+}
+
+footer .footer__copy {
+    font-size: .8rem;
+}
+
+footer .footer-wave-box {
+    position: absolute;
+    left: 0;
+    top: -19%;
+    height: 20%;
+    right: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+footer .footer-wave {
+    background-image: url('../../assets/img/footer-wabe-mobile.svg');
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 201%;
+    background-size: 50%;
+    background-position: bottom;
+    background-repeat: repeat-x;
+}
+
+footer .footer-animation {
+    -moz-animation: footer_wave 5s linear infinite;
+    -o-animation: footer_wave 5s linear infinite;
+    -webkit-animation: footer_wave 5s linear infinite;
+    left: auto;
+    right: 0;
+}
+
+@keyframes footer_wave {
+    0% {
+        transform: translateX(0%);
+    }
+
+    50% {
+        transform: translateX(25%);
+    }
+
+    100% {
+        transform: translateX(50%);
+    }
+}
+
+@-moz-keyframes footer_wave {
+    0% {
+        -moz-transform: translateX(0%);
+    }
+
+    50% {
+        -moz-transform: translateX(25%);
+    }
+
+    100% {
+        -moz-transform: translateX(50%);
+    }
+}
+
+@-o-keyframeskeyframes footer_wave {
+    0% {
+        -o-transform: translateX(0%);
+    }
+
+    50% {
+        -o-transform: translateX(25%);
+    }
+
+    100% {
+        -o-transform: translateX(50%);
+    }
+}
+
+@-webkit-keyframeskeyframes footer_wave {
+    0% {
+        -webkit-transform: translateX(0%);
+    }
+
+    50% {
+        -webkit-transform: translateX(25%);
+    }
+
+    100% {
+        -webkit-transform: translateX(50%);
+    }
+}
+
+@media (min-width: 768px) {
+    footer {
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+
+}
+
+@media (min-width: 1360px) {
+    footer {
+        padding-top: 8%;
+        padding-bottom: 4%;
+    }
+
+    footer .footer-wave-box {
+        top: -14%;
+        height: 29%;
+    }
+}

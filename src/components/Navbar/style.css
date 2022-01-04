@@ -1,0 +1,145 @@
+nav li {
+    list-style: none;
+}
+
+nav.nav-desktop {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--light);
+}
+
+a:hover {
+    color: var(--light);
+}
+
+nav.nav-mobile ul {
+    display: flex;
+    width: 420px;
+    margin: 0;
+    padding: 0;
+}
+
+nav.nav-mobile a::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f192";
+    font-size: 0px;
+    position: absolute;
+    bottom: 8px;
+    transition: all .3s ease-in-out;
+}
+
+nav.nav-mobile li a.active::before {
+    font-size: .5rem;
+}
+
+nav.nav-mobile {
+    position: fixed;
+    bottom: .3rem;
+    left: 0;
+    right: 0;
+    z-index: 122;
+    width: 90%;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+nav .nav__block_mobile {
+    display: flex;
+    width: 420px;
+    border-radius: 40px;
+    background-color: var(--primary);
+    /* backdrop-filter: saturate(180%) blur(20px); */
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.3);
+}
+
+nav .nav__block_mobile li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    min-width: 50px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+nav .nav__block_mobile li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+@media (min-width: 768px) {
+    nav.nav-desktop {
+        display: block;
+        position: fixed;
+        z-index: 2;
+        width: 100%;
+        /* box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%) */
+    }
+
+    nav.nav-desktop ul {
+        margin: 0;
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    nav.nav-desktop ul li a:hover {
+        color: var(--orange);
+    }
+
+    nav.nav-desktop .nav-desktop__content {
+        display: flex;
+        align-items: center;
+        height: 55px;
+        justify-content: end;
+    }
+
+    nav.nav-desktop svg {
+        width: 43.34px;
+        background-color: var(--primary);
+        border-radius: 54%;
+        height: 67%;
+        position: absolute;
+        left: 6%;
+        top: 15%;
+        cursor: pointer;
+    }
+
+    nav.nav-desktop .nav-desktop__content ul a {
+        color: var(--primary);
+        cursor: pointer;
+        position: relative;
+        transition: all .5s ease;
+    }
+
+    nav.nav-desktop ul a::before {
+        content: '';
+        height: 3px;
+        background-color: rgb(37, 37, 37);
+        border-radius: 12px;
+        width: 0%;
+        position: absolute;
+        right: 0px;
+        bottom: 11px;
+        transition: all .5s ease;
+        background-color: var(--orange);
+        bottom: -5px;
+    }
+
+    nav.nav-desktop li a.active::before {
+        width: 100%;
+        left: 0;
+    }
+
+    nav.nav-mobile {
+        display: none;
+    }
+}

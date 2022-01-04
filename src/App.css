@@ -1,0 +1,1078 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap');
+
+:root {
+  --primary: #272424;
+  --primary-rgb: rgb(39, 36, 36);
+  --secundary: rgb(48, 48, 48);
+  --light-secundary: white;
+  --light-secundary-rgb: rgb(255, 255, 255);
+  --orange: #A53A3B;
+  --light: #F1F3F2;
+}
+
+main {
+  background-color: var(--light);
+}
+
+html[data-theme="dark"] {
+  --primary: #F1F3F2;
+  --primary-rgb: rgb(241, 243, 242);
+  --light: #272424;
+  --light-secundary: rgb(48, 48, 48);
+  --light-secundary-rgb: rgb(48, 48, 48);
+  --secundary: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+}
+
+body {
+  margin: 0px;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+
+}
+
+p {
+  text-align: justify;
+}
+
+section {
+  position: relative;
+}
+
+section#home {
+  position: unset;
+  width: 100%;
+  height: 736px;
+  /* background: linear-gradient(180deg, #CEE5EA 38.54%, rgba(234, 234, 234, 0) 100%); */
+  background: var(--light);
+  cursor: default;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  padding: 15px;
+  margin: 0;
+}
+
+section#home div.full-sreen {
+  min-height: 90vh;
+}
+
+section#home .home-content {
+  flex: 0 0 100%;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  position: relative;
+  justify-content: center;
+  flex-direction: column;
+  gap: 14px;
+}
+
+section#home .home-title {
+  position: absolute;
+  width: 90%;
+  top: 5%;
+  left: 5%;
+}
+
+section#home .home-content .content-logo {
+  position: absolute;
+  top: 42%;
+  z-index: 1;
+  margin-left: 3%;
+}
+
+section#home .home-title__icons {
+  width: 4%;
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: .4rem;
+  font-size: 1.6rem;
+}
+
+section#home .home-title__icons i:hover {
+  color: white;
+}
+
+section#home .home-title h3 {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+section#home .home-title__icons i {
+  color: var(--orange);
+}
+
+section#home .home-logo-animation {
+  align-items: center;
+  position: relative;
+  gap: 15px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 25px var(--primary);
+  opacity: .9;
+}
+
+section#home .home-title .surname {
+  color: white;
+  font-size: 1.7rem;
+  font-weight: 700;
+  -webkit-text-stroke: 1px #A53A3B;
+}
+
+
+section#home .home-title .name {
+  color: var(--orange);
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+section#home .item-logo-left {
+  position: absolute;
+  transition: icon-left .5s ease-in-out;
+  z-index: 2;
+}
+
+section#home .primary-rol,
+section#home .secundary-rol {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+#stars {
+  width: 2px;
+  height: 2px;
+  z-index: -1;
+  top: 0px;
+  box-shadow: 71px 802px var(--primary), 857px 1894px, 1232px 1198px var(--primary), 621px 126px var(--primary), 1284px 165px var(--primary), 324px 356px var(--primary), 1073px 644px var(--primary), 1499px 168px var(--primary), 952px 1815px var(--primary), 857px 1899px var(--primary), 784px 1699px var(--primary), 1938px 872px var(--primary), 1048px 919px var(--primary), 1947px 1467px var(--primary), 1431px 991px var(--primary), 972px 1221px var(--primary), 184px 967px var(--primary), 926px 1986px var(--primary), 171px 1039px var(--primary), 1965px 833px var(--primary), 1574px 979px var(--primary), 1488px 240px var(--primary), 507px 584px var(--primary), 1433px 105px var(--primary), 721px 1242px var(--primary), 1272px 452px var(--primary), 1904px 147px var(--primary), 1126px 1802px var(--primary), 710px 1285px var(--primary), 406px 987px var(--primary), 1187px 1646px var(--primary), 1619px 1978px var(--primary), 1930px 262px var(--primary), 1056px 150px var(--primary), 1360px 1512px var(--primary), 152px 1324px var(--primary), 1484px 384px var(--primary), 1346px 1211px var(--primary), 1060px 815px var(--primary), 1064px 1009px var(--primary), 193px 71px var(--primary), 1005px 909px var(--primary), 1604px 1995px var(--primary), 1110px 809px var(--primary), 671px 1800px var(--primary), 881px 275px var(--primary), 1507px 1355px var(--primary), 1232px 1570px var(--primary), 1614px 1334px var(--primary), 1111px 1978px var(--primary), 1777px 1487px var(--primary), 601px 1705px var(--primary), 1050px 854px var(--primary), 1393px 1255px var(--primary), 1596px 1021px var(--primary), 987px 436px var(--primary), 1138px 557px var(--primary), 225px 949px var(--primary), 1724px 1245px var(--primary), 1511px 1733px var(--primary), 1209px 1781px var(--primary), 1094px 1031px var(--primary), 283px 251px var(--primary), 1296px 1756px var(--primary), 1246px 1097px var(--primary), 1347px 1033px var(--primary), 1677px 1101px var(--primary), 113px 656px var(--primary), 559px 1220px var(--primary), 391px 514px var(--primary), 1819px 1761px var(--primary), 490px 1381px var(--primary), 684px 1694px var(--primary), 132px 923px var(--primary), 562px 1395px var(--primary), 1188px 1536px var(--primary), 319px 1532px var(--primary), 621px 1018px var(--primary), 607px 1517px var(--primary), 1898px 1367px var(--primary), 830px 905px var(--primary), 467px 504px var(--primary), 14px 1419px var(--primary), 1718px 1358px var(--primary), 267px 1192px var(--primary), 1671px 1674px var(--primary), 1924px 1750px var(--primary), 1884px 1502px var(--primary), 1887px 520px var(--primary), 1854px 391px var(--primary), 680px 380px var(--primary), 1283px 1259px var(--primary), 1568px 536px var(--primary), 1691px 1473px var(--primary), 1795px 1512px var(--primary), 616px 853px var(--primary), 1217px 1925px var(--primary), 560px 534px var(--primary), 77px 841px var(--primary), 596px 1849px var(--primary), 101px 1319px var(--primary), 664px 1030px var(--primary), 594px 1837px var(--primary), 1045px 1816px var(--primary), 603px 690px var(--primary), 635px 31px var(--primary), 912px 21px var(--primary), 222px 140px var(--primary), 919px 1771px var(--primary), 105px 1292px var(--primary), 1368px 620px var(--primary), 1641px 461px var(--primary), 1763px 10px var(--primary), 251px 1027px var(--primary), 1640px 758px var(--primary), 353px 1330px var(--primary), 1191px 439px var(--primary), 1828px 599px var(--primary), 38px 285px var(--primary), 810px 218px var(--primary), 187px 708px var(--primary), 299px 256px var(--primary), 1744px 1949px var(--primary), 710px 1070px var(--primary), 423px 455px var(--primary), 1960px 1252px var(--primary), 731px 1326px var(--primary), 1172px 1121px var(--primary), 29px 784px var(--primary), 406px 1981px var(--primary), 750px 933px var(--primary), 542px 1924px var(--primary), 1860px 1300px var(--primary), 240px 228px var(--primary), 47px 1997px var(--primary), 148px 1596px var(--primary), 1505px 1707px var(--primary), 1002px 498px var(--primary), 798px 755px var(--primary), 1297px 1163px var(--primary), 1227px 267px var(--primary), 1717px 1391px var(--primary), 1278px 22px var(--primary), 1519px 314px var(--primary), 1587px 1429px var(--primary), 734px 8px var(--primary), 1889px 706px var(--primary), 711px 580px var(--primary), 1941px 750px var(--primary), 256px 36px var(--primary), 1932px 1291px var(--primary), 1935px 327px var(--primary), 1814px 1753px var(--primary), 977px 438px var(--primary), 1075px 1330px var(--primary), 147px 1468px var(--primary), 404px 1221px var(--primary), 1054px 778px var(--primary), 677px 1252px var(--primary), 1841px 1857px var(--primary), 1944px 1464px var(--primary), 1290px 104px var(--primary), 745px 893px var(--primary), 1863px 546px var(--primary), 259px 1251px var(--primary), 517px 153px var(--primary), 1264px 1249px var(--primary), 398px 315px var(--primary), 489px 1872px var(--primary), 341px 1292px var(--primary), 291px 1929px var(--primary), 602px 715px var(--primary), 373px 878px var(--primary), 430px 670px var(--primary), 1914px 1059px var(--primary), 1122px 1786px var(--primary), 1266px 1047px var(--primary), 1478px 1895px var(--primary), 2000px 1931px var(--primary), 1621px 1161px var(--primary), 1177px 1984px var(--primary), 432px 1587px var(--primary), 1141px 479px var(--primary), 841px 413px var(--primary), 160px 75px var(--primary), 1795px 1840px var(--primary), 192px 37px var(--primary), 318px 1893px var(--primary), 1986px 812px var(--primary), 1507px 60px var(--primary), 1670px 1626px var(--primary), 979px 218px var(--primary), 1115px 1953px var(--primary), 3px 222px var(--primary), 1186px 862px var(--primary), 807px 284px var(--primary), 787px 998px var(--primary), 608px 1284px var(--primary), 19px 515px var(--primary), 1404px 1757px var(--primary), 1804px 1651px var(--primary), 155px 1045px var(--primary), 397px 1575px var(--primary), 432px 166px var(--primary), 262px 1029px var(--primary), 44px 1446px var(--primary), 123px 207px var(--primary), 817px 900px var(--primary), 908px 602px var(--primary), 643px 998px var(--primary), 1831px 837px var(--primary), 1044px 172px var(--primary), 208px 728px var(--primary), 111px 375px var(--primary), 1564px 494px var(--primary), 1399px 1100px var(--primary), 909px 585px var(--primary), 1451px 510px var(--primary), 27px 1160px var(--primary), 16px 1744px var(--primary), 262px 344px var(--primary), 118px 1458px var(--primary), 1849px 1233px var(--primary), 532px 1510px var(--primary), 428px 293px var(--primary), 1477px 1402px var(--primary), 1491px 1087px var(--primary), 630px 822px var(--primary), 934px 1605px var(--primary), 857px 591px var(--primary), 1345px 1762px var(--primary), 1154px 1850px var(--primary), 164px 1572px var(--primary), 1077px 354px var(--primary), 129px 257px var(--primary), 1814px 304px var(--primary), 1009px 806px var(--primary), 97px 569px var(--primary), 47px 359px var(--primary), 1634px 963px var(--primary), 1580px 1604px var(--primary), 1817px 1785px var(--primary), 1703px 931px var(--primary), 1678px 366px var(--primary), 149px 410px var(--primary), 128px 21px var(--primary), 1049px 77px var(--primary), 878px 653px var(--primary), 1932px 1588px var(--primary), 681px 1883px var(--primary), 603px 1492px var(--primary), 1950px 1798px var(--primary), 721px 1890px var(--primary), 248px 319px var(--primary), 1923px 1658px var(--primary), 1340px 1474px var(--primary), 1575px 1711px var(--primary), 622px 980px var(--primary), 1004px 968px var(--primary), 1895px 1543px var(--primary), 1894px 1785px var(--primary), 796px 1010px var(--primary), 1274px 1021px var(--primary), 1171px 1320px var(--primary), 692px 924px var(--primary), 1542px 1805px var(--primary), 1136px 177px var(--primary), 963px 880px var(--primary), 708px 1853px var(--primary), 1035px 694px var(--primary), 445px 1959px var(--primary), 974px 236px var(--primary), 1550px 713px var(--primary), 127px 972px var(--primary), 1424px 1377px var(--primary), 1778px 41px var(--primary), 500px 166px var(--primary), 1784px 1385px var(--primary), 914px 170px var(--primary), 1524px 1677px var(--primary), 506px 1379px var(--primary), 1929px 720px var(--primary), 845px 1179px var(--primary), 228px 871px var(--primary), 1249px 326px var(--primary), 244px 1119px var(--primary), 1556px 1758px var(--primary), 699px 435px var(--primary), 23px 457px var(--primary), 548px 1178px var(--primary), 1016px 1145px var(--primary), 1279px 731px var(--primary), 170px 1819px var(--primary), 200px 822px var(--primary), 595px 1094px var(--primary), 1103px 1054px var(--primary), 1753px 178px var(--primary), 1473px 1933px var(--primary), 1173px 373px var(--primary), 264px 1051px var(--primary), 1092px 1155px var(--primary), 1404px 1654px var(--primary), 78px 209px var(--primary), 278px 1722px var(--primary), 1614px 1096px var(--primary), 924px 567px var(--primary), 1167px 1549px var(--primary), 1975px 179px var(--primary), 960px 852px var(--primary), 1739px 1765px var(--primary), 268px 121px var(--primary), 1795px 1492px var(--primary), 971px 1599px var(--primary), 1541px 904px var(--primary), 51px 1792px var(--primary), 1409px 908px var(--primary), 211px 824px var(--primary), 745px 1694px var(--primary), 1598px 1724px var(--primary), 1383px 1230px var(--primary), 1066px 661px var(--primary), 1869px 914px var(--primary), 885px 298px var(--primary), 888px 1582px var(--primary), 814px 878px var(--primary), 1157px 1382px var(--primary), 878px 21px var(--primary), 692px 1835px var(--primary), 745px 784px var(--primary), 953px 1904px var(--primary), 282px 1685px var(--primary), 36px 69px var(--primary), 1641px 1029px var(--primary), 1144px 1072px var(--primary), 928px 1739px var(--primary), 1608px 1152px var(--primary), 1553px 433px var(--primary), 1583px 1222px var(--primary), 1953px 1829px var(--primary), 693px 1007px var(--primary), 1220px 842px var(--primary), 137px 1677px var(--primary), 1754px 890px var(--primary), 1371px 1592px var(--primary), 1910px 1068px var(--primary), 257px 131px var(--primary), 126px 1325px var(--primary), 474px 1418px var(--primary), 928px 866px var(--primary), 813px 1162px var(--primary), 1726px 502px var(--primary), 1331px 553px var(--primary), 446px 1612px var(--primary), 375px 1088px var(--primary), 796px 1347px var(--primary), 1378px 1875px var(--primary), 655px 1909px var(--primary), 1445px 1069px var(--primary), 1677px 1162px var(--primary), 1528px 1814px var(--primary), 1866px 1614px var(--primary), 832px 945px var(--primary), 174px 1064px var(--primary), 1376px 1665px var(--primary), 200px 53px var(--primary), 612px 504px var(--primary), 1224px 555px var(--primary), 876px 1375px var(--primary), 883px 1692px var(--primary), 1732px 1882px var(--primary), 94px 1398px var(--primary), 1945px 887px var(--primary), 935px 1871px var(--primary), 698px 1788px var(--primary), 994px 1740px var(--primary), 509px 804px var(--primary), 451px 1264px var(--primary), 834px 1842px var(--primary), 1454px 1537px var(--primary), 5px 1353px var(--primary), 283px 111px var(--primary), 1813px 70px var(--primary), 1474px 880px var(--primary), 917px 1606px var(--primary), 901px 263px var(--primary), 802px 922px var(--primary), 11px 36px var(--primary), 1296px 1358px var(--primary), 468px 1246px var(--primary), 218px 1804px var(--primary), 1596px 396px var(--primary), 77px 222px var(--primary), 385px 1822px var(--primary), 676px 941px var(--primary), 1487px 931px var(--primary), 1143px 887px var(--primary), 688px 409px var(--primary), 1437px 538px var(--primary), 1407px 181px var(--primary), 1921px 972px var(--primary), 1896px 470px var(--primary), 1013px 587px var(--primary), 757px 1964px var(--primary), 1878px 719px var(--primary), 574px 1293px var(--primary), 1525px 844px var(--primary), 1320px 345px var(--primary), 1196px 974px var(--primary), 1971px 1303px var(--primary), 902px 100px var(--primary), 1801px 1880px var(--primary), 1053px 539px var(--primary), 1625px 1732px var(--primary), 1557px 178px var(--primary), 1697px 1698px var(--primary), 974px 1065px var(--primary), 945px 300px var(--primary), 1162px 908px var(--primary), 1184px 608px var(--primary), 1717px 325px var(--primary), 73px 194px var(--primary), 1244px 1730px var(--primary), 1954px 345px var(--primary), 694px 1757px var(--primary), 644px 1069px var(--primary), 7px 174px var(--primary), 455px 1088px var(--primary), 48px 938px var(--primary), 296px 1235px var(--primary), 127px 785px var(--primary), 1891px 1952px var(--primary), 506px 1656px var(--primary), 1916px 293px var(--primary), 782px 1716px var(--primary), 1096px 136px var(--primary), 1152px 479px var(--primary), 1376px 626px var(--primary), 391px 238px var(--primary), 343px 199px var(--primary), 1972px 973px var(--primary), 932px 1215px var(--primary), 776px 345px var(--primary), 191px 1220px var(--primary), 1717px 731px var(--primary), 1132px 1015px var(--primary), 159px 1444px var(--primary), 856px 893px var(--primary), 1671px 934px var(--primary), 1503px 1206px var(--primary), 214px 946px var(--primary), 867px 979px var(--primary), 1340px 311px var(--primary), 847px 105px var(--primary), 1519px 396px var(--primary), 901px 723px var(--primary), 1320px 885px var(--primary), 1008px 423px var(--primary), 1132px 1138px var(--primary), 1190px 631px var(--primary), 922px 452px var(--primary), 559px 78px var(--primary), 1452px 340px var(--primary), 196px 864px var(--primary), 954px 1420px var(--primary), 436px 1426px var(--primary), 1046px 1835px var(--primary), 1457px 1413px var(--primary), 386px 1167px var(--primary), 1138px 125px var(--primary), 416px 428px var(--primary), 1603px 1573px var(--primary), 654px 1632px var(--primary), 137px 10px var(--primary), 476px 834px var(--primary), 1448px 1251px var(--primary), 1419px 1261px var(--primary), 1711px 263px var(--primary), 271px 207px var(--primary), 1213px 611px var(--primary), 981px 609px var(--primary), 1798px 422px var(--primary), 1086px 262px var(--primary), 123px 1954px var(--primary), 281px 265px var(--primary), 679px 1374px var(--primary), 3px 1336px var(--primary), 270px 1457px var(--primary), 787px 1081px var(--primary), 1360px 1022px var(--primary), 288px 1080px var(--primary), 123px 76px var(--primary), 1879px 849px var(--primary), 1724px 1462px var(--primary), 1355px 330px var(--primary), 1836px 1538px var(--primary), 1713px 1912px var(--primary), 1659px 923px var(--primary), 588px 504px var(--primary), 429px 1969px var(--primary), 996px 699px var(--primary), 281px 152px var(--primary), 682px 283px var(--primary), 962px 1941px var(--primary), 875px 247px var(--primary), 1919px 459px var(--primary), 1166px 994px var(--primary), 1028px 1959px var(--primary), 485px 418px var(--primary), 1250px 621px var(--primary), 245px 952px var(--primary), 1300px 236px var(--primary), 1084px 450px var(--primary), 467px 635px var(--primary), 1506px 753px var(--primary), 937px 1036px var(--primary), 1624px 213px var(--primary), 12px 1351px var(--primary), 1069px 1559px var(--primary), 1760px 217px var(--primary), 794px 1985px var(--primary), 1970px 772px var(--primary), 1448px 1460px var(--primary), 1285px 807px var(--primary), 1560px 593px var(--primary), 1685px 1334px var(--primary), 1661px 1052px var(--primary), 1557px 1859px var(--primary), 125px 1222px var(--primary), 1870px 998px var(--primary), 373px 409px var(--primary), 1507px 376px var(--primary), 1933px 1557px var(--primary), 1086px 1329px var(--primary), 470px 1156px var(--primary), 1796px 419px var(--primary), 243px 579px var(--primary), 1444px 1109px var(--primary), 574px 71px var(--primary), 1771px 622px var(--primary), 1644px 1895px var(--primary), 911px 740px var(--primary), 878px 861px var(--primary), 1045px 292px var(--primary), 1262px 1780px var(--primary), 342px 1495px var(--primary), 502px 1278px var(--primary), 1891px 1299px var(--primary), 476px 269px var(--primary), 1758px 689px var(--primary), 1293px 553px var(--primary), 405px 791px var(--primary), 820px 1260px var(--primary), 1029px 1464px var(--primary), 623px 746px var(--primary), 160px 1801px var(--primary), 606px 197px var(--primary), 191px 1456px var(--primary), 468px 539px var(--primary), 1280px 1892px var(--primary), 1926px 1699px var(--primary), 255px 708px var(--primary), 1678px 835px var(--primary), 818px 34px var(--primary), 630px 1966px var(--primary), 1499px 1355px var(--primary), 1923px 892px var(--primary), 1229px 1215px var(--primary), 1584px 1418px var(--primary), 1184px 1404px var(--primary), 169px 1301px var(--primary), 1338px 1317px var(--primary), 30px 1290px var(--primary), 824px 1134px var(--primary), 1733px 1910px var(--primary), 443px 1072px var(--primary), 1817px 1921px var(--primary), 1939px 1194px var(--primary), 901px 615px var(--primary), 1827px 1004px var(--primary), 459px 220px var(--primary), 1640px 1193px var(--primary), 1090px 765px var(--primary), 821px 464px var(--primary), 1305px 607px var(--primary), 1355px 1481px var(--primary), 1112px 1482px var(--primary), 176px 1173px var(--primary), 915px 1122px var(--primary), 608px 1314px var(--primary), 733px 1941px var(--primary), 759px 1608px var(--primary), 659px 557px var(--primary), 1303px 1732px var(--primary), 1792px 1673px var(--primary), 1631px 33px var(--primary), 94px 1837px var(--primary), 1895px 1393px var(--primary), 608px 1161px var(--primary), 1081px 1686px var(--primary), 917px 792px var(--primary), 877px 1254px var(--primary), 437px 1473px var(--primary), 830px 711px var(--primary), 828px 1439px var(--primary), 1600px 119px var(--primary), 524px 1193px var(--primary), 1032px 213px var(--primary), 1262px 3px var(--primary), 861px 1190px var(--primary), 1847px 496px var(--primary), 990px 157px var(--primary), 1218px 613px var(--primary), 1451px 133px var(--primary), 4px 739px var(--primary), 882px 369px var(--primary), 455px 1801px var(--primary), 1511px 725px var(--primary), 1402px 178px var(--primary), 1336px 648px var(--primary), 794px 680px var(--primary), 1610px 390px var(--primary), 1363px 1888px var(--primary), 1456px 1334px var(--primary), 521px 1565px var(--primary), 1867px 986px var(--primary), 1789px 1815px var(--primary), 1925px 690px var(--primary), 540px 1805px var(--primary), 1632px 217px var(--primary), 1262px 1677px var(--primary), 1922px 773px var(--primary), 1170px 1772px var(--primary), 807px 1821px var(--primary), 823px 1514px var(--primary), 205px 147px var(--primary), 138px 251px var(--primary), 325px 310px var(--primary), 1396px 789px var(--primary), 178px 1605px var(--primary), 27px 566px var(--primary), 773px 1936px var(--primary), 1631px 835px var(--primary), 816px 1013px var(--primary), 1563px 1226px var(--primary), 1106px 512px var(--primary), 1410px 1517px var(--primary), 1967px 1867px var(--primary), 1544px 1838px var(--primary), 810px 913px var(--primary), 1601px 1060px var(--primary), 1736px 467px var(--primary), 1443px 539px var(--primary), 1907px 10px var(--primary), 1409px 1747px var(--primary), 799px 1795px var(--primary), 402px 889px var(--primary), 1761px 626px var(--primary), 1225px 1555px var(--primary), 1070px 219px var(--primary), 377px 1168px var(--primary), 1993px 1541px var(--primary), 476px 675px var(--primary), 552px 1250px var(--primary), 985px 1433px var(--primary), 1360px 526px var(--primary), 12px 793px var(--primary), 688px 456px var(--primary), 1117px 1249px var(--primary), 1207px 109px var(--primary), 1318px 515px var(--primary), 953px 1535px var(--primary), 931px 1729px var(--primary), 1286px 318px var(--primary), 906px 458px var(--primary), 74px 1962px var(--primary), 1205px 1698px var(--primary), 578px 1478px var(--primary), 195px 1485px var(--primary), 565px 1192px var(--primary), 429px 94px var(--primary), 970px 1321px var(--primary), 34px 957px var(--primary), 1287px 1735px var(--primary), 820px 1954px var(--primary), 18px 1042px var(--primary), 791px 1151px var(--primary), 1327px 345px var(--primary), 834px 1592px var(--primary), 748px 528px var(--primary), 1252px 1670px var(--primary), 1925px 1909px var(--primary), 1069px 581px var(--primary), 1358px 1288px var(--primary), 253px 1990px var(--primary), 1576px 65px var(--primary), 1106px 1569px var(--primary), 1213px 571px var(--primary), 1477px 1398px var(--primary), 1000px 16px var(--primary), 1541px 7px var(--primary);
+  animation: animStar 70s linear infinite;
+}
+
+#stars:after {
+  content: " ";
+  position: absolute;
+  top: 2000px;
+  width: 2px;
+  height: 2px;
+  z-index: -1;
+  box-shadow: 71px 802px var(--primary), 857px 1894px var(--primary), 1232px 1198px var(--primary), 621px 126px var(--primary), 1284px 165px var(--primary), 324px 356px var(--primary), 1073px 644px var(--primary), 1499px 168px var(--primary), 952px 1815px var(--primary), 857px 1899px var(--primary), 784px 1699px var(--primary), 1938px 872px var(--primary), 1048px 919px var(--primary), 1947px 1467px var(--primary), 1431px 991px var(--primary), 972px 1221px var(--primary), 184px 967px var(--primary), 926px 1986px var(--primary), 171px 1039px var(--primary), 1965px 833px var(--primary), 1574px 979px var(--primary), 1488px 240px var(--primary), 507px 584px var(--primary), 1433px 105px var(--primary), 721px 1242px var(--primary), 1272px 452px var(--primary), 1904px 147px var(--primary), 1126px 1802px var(--primary), 710px 1285px var(--primary), 406px 987px var(--primary), 1187px 1646px var(--primary), 1619px 1978px var(--primary), 1930px 262px var(--primary), 1056px 150px var(--primary), 1360px 1512px var(--primary), 152px 1324px var(--primary), 1484px 384px var(--primary), 1346px 1211px var(--primary), 1060px 815px var(--primary), 1064px 1009px var(--primary), 193px 71px var(--primary), 1005px 909px var(--primary), 1604px 1995px var(--primary), 1110px 809px var(--primary), 671px 1800px var(--primary), 881px 275px var(--primary), 1507px 1355px var(--primary), 1232px 1570px var(--primary), 1614px 1334px var(--primary), 1111px 1978px var(--primary), 1777px 1487px var(--primary), 601px 1705px var(--primary), 1050px 854px var(--primary), 1393px 1255px var(--primary), 1596px 1021px var(--primary), 987px 436px var(--primary), 1138px 557px var(--primary), 225px 949px var(--primary), 1724px 1245px var(--primary), 1511px 1733px var(--primary), 1209px 1781px var(--primary), 1094px 1031px var(--primary), 283px 251px var(--primary), 1296px 1756px var(--primary), 1246px 1097px var(--primary), 1347px 1033px var(--primary), 1677px 1101px var(--primary), 113px 656px var(--primary), 559px 1220px var(--primary), 391px 514px var(--primary), 1819px 1761px var(--primary), 490px 1381px var(--primary), 684px 1694px var(--primary), 132px 923px var(--primary), 562px 1395px var(--primary), 1188px 1536px var(--primary), 319px 1532px var(--primary), 621px 1018px var(--primary), 607px 1517px var(--primary), 1898px 1367px var(--primary), 830px 905px var(--primary), 467px 504px var(--primary), 14px 1419px var(--primary), 1718px 1358px var(--primary), 267px 1192px var(--primary), 1671px 1674px var(--primary), 1924px 1750px var(--primary), 1884px 1502px var(--primary), 1887px 520px var(--primary), 1854px 391px var(--primary), 680px 380px var(--primary), 1283px 1259px var(--primary), 1568px 536px var(--primary), 1691px 1473px var(--primary), 1795px 1512px var(--primary), 616px 853px var(--primary), 1217px 1925px var(--primary), 560px 534px var(--primary), 77px 841px var(--primary), 596px 1849px var(--primary), 101px 1319px var(--primary), 664px 1030px var(--primary), 594px 1837px var(--primary), 1045px 1816px var(--primary), 603px 690px var(--primary), 635px 31px var(--primary), 912px 21px var(--primary), 222px 140px var(--primary), 919px 1771px var(--primary), 105px 1292px var(--primary), 1368px 620px var(--primary), 1641px 461px var(--primary), 1763px 10px var(--primary), 251px 1027px var(--primary), 1640px 758px var(--primary), 353px 1330px var(--primary), 1191px 439px var(--primary), 1828px 599px var(--primary), 38px 285px var(--primary), 810px 218px var(--primary), 187px 708px var(--primary), 299px 256px var(--primary), 1744px 1949px var(--primary), 710px 1070px var(--primary), 423px 455px var(--primary), 1960px 1252px var(--primary), 731px 1326px var(--primary), 1172px 1121px var(--primary), 29px 784px var(--primary), 406px 1981px var(--primary), 750px 933px var(--primary), 542px 1924px var(--primary), 1860px 1300px var(--primary), 240px 228px var(--primary), 47px 1997px var(--primary), 148px 1596px var(--primary), 1505px 1707px var(--primary), 1002px 498px var(--primary), 798px 755px var(--primary), 1297px 1163px var(--primary), 1227px 267px var(--primary), 1717px 1391px var(--primary), 1278px 22px var(--primary), 1519px 314px var(--primary), 1587px 1429px var(--primary), 734px 8px var(--primary), 1889px 706px var(--primary), 711px 580px var(--primary), 1941px 750px var(--primary), 256px 36px var(--primary), 1932px 1291px var(--primary), 1935px 327px var(--primary), 1814px 1753px var(--primary), 977px 438px var(--primary), 1075px 1330px var(--primary), 147px 1468px var(--primary), 404px 1221px var(--primary), 1054px 778px var(--primary), 677px 1252px var(--primary), 1841px 1857px var(--primary), 1944px 1464px var(--primary), 1290px 104px var(--primary), 745px 893px var(--primary), 1863px 546px var(--primary), 259px 1251px var(--primary), 517px 153px var(--primary), 1264px 1249px var(--primary), 398px 315px var(--primary), 489px 1872px var(--primary), 341px 1292px var(--primary), 291px 1929px var(--primary), 602px 715px var(--primary), 373px 878px var(--primary), 430px 670px var(--primary), 1914px 1059px var(--primary), 1122px 1786px var(--primary), 1266px 1047px var(--primary), 1478px 1895px var(--primary), 2000px 1931px var(--primary), 1621px 1161px var(--primary), 1177px 1984px var(--primary), 432px 1587px var(--primary), 1141px 479px var(--primary), 841px 413px var(--primary), 160px 75px var(--primary), 1795px 1840px var(--primary), 192px 37px var(--primary), 318px 1893px var(--primary), 1986px 812px var(--primary), 1507px 60px var(--primary), 1670px 1626px var(--primary), 979px 218px var(--primary), 1115px 1953px var(--primary), 3px 222px var(--primary), 1186px 862px var(--primary), 807px 284px var(--primary), 787px 998px var(--primary), 608px 1284px var(--primary), 19px 515px var(--primary), 1404px 1757px var(--primary), 1804px 1651px var(--primary), 155px 1045px var(--primary), 397px 1575px var(--primary), 432px 166px var(--primary), 262px 1029px var(--primary), 44px 1446px var(--primary), 123px 207px var(--primary), 817px 900px var(--primary), 908px 602px var(--primary), 643px 998px var(--primary), 1831px 837px var(--primary), 1044px 172px var(--primary), 208px 728px var(--primary), 111px 375px var(--primary), 1564px 494px var(--primary), 1399px 1100px var(--primary), 909px 585px var(--primary), 1451px 510px var(--primary), 27px 1160px var(--primary), 16px 1744px var(--primary), 262px 344px var(--primary), 118px 1458px var(--primary), 1849px 1233px var(--primary), 532px 1510px var(--primary), 428px 293px var(--primary), 1477px 1402px var(--primary), 1491px 1087px var(--primary), 630px 822px var(--primary), 934px 1605px var(--primary), 857px 591px var(--primary), 1345px 1762px var(--primary), 1154px 1850px var(--primary), 164px 1572px var(--primary), 1077px 354px var(--primary), 129px 257px var(--primary), 1814px 304px var(--primary), 1009px 806px var(--primary), 97px 569px var(--primary), 47px 359px var(--primary), 1634px 963px var(--primary), 1580px 1604px var(--primary), 1817px 1785px var(--primary), 1703px 931px var(--primary), 1678px 366px var(--primary), 149px 410px var(--primary), 128px 21px var(--primary), 1049px 77px var(--primary), 878px 653px var(--primary), 1932px 1588px var(--primary), 681px 1883px var(--primary), 603px 1492px var(--primary), 1950px 1798px var(--primary), 721px 1890px var(--primary), 248px 319px var(--primary), 1923px 1658px var(--primary), 1340px 1474px var(--primary), 1575px 1711px var(--primary), 622px 980px var(--primary), 1004px 968px var(--primary), 1895px 1543px var(--primary), 1894px 1785px var(--primary), 796px 1010px var(--primary), 1274px 1021px var(--primary), 1171px 1320px var(--primary), 692px 924px var(--primary), 1542px 1805px var(--primary), 1136px 177px var(--primary), 963px 880px var(--primary), 708px 1853px var(--primary), 1035px 694px var(--primary), 445px 1959px var(--primary), 974px 236px var(--primary), 1550px 713px var(--primary), 127px 972px var(--primary), 1424px 1377px var(--primary), 1778px 41px var(--primary), 500px 166px var(--primary), 1784px 1385px var(--primary), 914px 170px var(--primary), 1524px 1677px var(--primary), 506px 1379px var(--primary), 1929px 720px var(--primary), 845px 1179px var(--primary), 228px 871px var(--primary), 1249px 326px var(--primary), 244px 1119px var(--primary), 1556px 1758px var(--primary), 699px 435px var(--primary), 23px 457px var(--primary), 548px 1178px var(--primary), 1016px 1145px var(--primary), 1279px 731px var(--primary), 170px 1819px var(--primary), 200px 822px var(--primary), 595px 1094px var(--primary), 1103px 1054px var(--primary), 1753px 178px var(--primary), 1473px 1933px var(--primary), 1173px 373px var(--primary), 264px 1051px var(--primary), 1092px 1155px var(--primary), 1404px 1654px var(--primary), 78px 209px var(--primary), 278px 1722px var(--primary), 1614px 1096px var(--primary), 924px 567px var(--primary), 1167px 1549px var(--primary), 1975px 179px var(--primary), 960px 852px var(--primary), 1739px 1765px var(--primary), 268px 121px var(--primary), 1795px 1492px var(--primary), 971px 1599px var(--primary), 1541px 904px var(--primary), 51px 1792px var(--primary), 1409px 908px var(--primary), 211px 824px var(--primary), 745px 1694px var(--primary), 1598px 1724px var(--primary), 1383px 1230px var(--primary), 1066px 661px var(--primary), 1869px 914px var(--primary), 885px 298px var(--primary), 888px 1582px var(--primary), 814px 878px var(--primary), 1157px 1382px var(--primary), 878px 21px var(--primary), 692px 1835px var(--primary), 745px 784px var(--primary), 953px 1904px var(--primary), 282px 1685px var(--primary), 36px 69px var(--primary), 1641px 1029px var(--primary), 1144px 1072px var(--primary), 928px 1739px var(--primary), 1608px 1152px var(--primary), 1553px 433px var(--primary), 1583px 1222px var(--primary), 1953px 1829px var(--primary), 693px 1007px var(--primary), 1220px 842px var(--primary), 137px 1677px var(--primary), 1754px 890px var(--primary), 1371px 1592px var(--primary), 1910px 1068px var(--primary), 257px 131px var(--primary), 126px 1325px var(--primary), 474px 1418px var(--primary), 928px 866px var(--primary), 813px 1162px var(--primary), 1726px 502px var(--primary), 1331px 553px var(--primary), 446px 1612px var(--primary), 375px 1088px var(--primary), 796px 1347px var(--primary), 1378px 1875px var(--primary), 655px 1909px var(--primary), 1445px 1069px var(--primary), 1677px 1162px var(--primary), 1528px 1814px var(--primary), 1866px 1614px var(--primary), 832px 945px var(--primary), 174px 1064px var(--primary), 1376px 1665px var(--primary), 200px 53px var(--primary), 612px 504px var(--primary), 1224px 555px var(--primary), 876px 1375px var(--primary), 883px 1692px var(--primary), 1732px 1882px var(--primary), 94px 1398px var(--primary), 1945px 887px var(--primary), 935px 1871px var(--primary), 698px 1788px var(--primary), 994px 1740px var(--primary), 509px 804px var(--primary), 451px 1264px var(--primary), 834px 1842px var(--primary), 1454px 1537px var(--primary), 5px 1353px var(--primary), 283px 111px var(--primary), 1813px 70px var(--primary), 1474px 880px var(--primary), 917px 1606px var(--primary), 901px 263px var(--primary), 802px 922px var(--primary), 11px 36px var(--primary), 1296px 1358px var(--primary), 468px 1246px var(--primary), 218px 1804px var(--primary), 1596px 396px var(--primary), 77px 222px var(--primary), 385px 1822px var(--primary), 676px 941px var(--primary), 1487px 931px var(--primary), 1143px 887px var(--primary), 688px 409px var(--primary), 1437px 538px var(--primary), 1407px 181px var(--primary), 1921px 972px var(--primary), 1896px 470px var(--primary), 1013px 587px var(--primary), 757px 1964px var(--primary), 1878px 719px var(--primary), 574px 1293px var(--primary), 1525px 844px var(--primary), 1320px 345px var(--primary), 1196px 974px var(--primary), 1971px 1303px var(--primary), 902px 100px var(--primary), 1801px 1880px var(--primary), 1053px 539px var(--primary), 1625px 1732px var(--primary), 1557px 178px var(--primary), 1697px 1698px var(--primary), 974px 1065px var(--primary), 945px 300px var(--primary), 1162px 908px var(--primary), 1184px 608px var(--primary), 1717px 325px var(--primary), 73px 194px var(--primary), 1244px 1730px var(--primary), 1954px 345px var(--primary), 694px 1757px var(--primary), 644px 1069px var(--primary), 7px 174px var(--primary), 455px 1088px var(--primary), 48px 938px var(--primary), 296px 1235px var(--primary), 127px 785px var(--primary), 1891px 1952px var(--primary), 506px 1656px var(--primary), 1916px 293px var(--primary), 782px 1716px var(--primary), 1096px 136px var(--primary), 1152px 479px var(--primary), 1376px 626px var(--primary), 391px 238px var(--primary), 343px 199px var(--primary), 1972px 973px var(--primary), 932px 1215px var(--primary), 776px 345px var(--primary), 191px 1220px var(--primary), 1717px 731px var(--primary), 1132px 1015px var(--primary), 159px 1444px var(--primary), 856px 893px var(--primary), 1671px 934px var(--primary), 1503px 1206px var(--primary), 214px 946px var(--primary), 867px 979px var(--primary), 1340px 311px var(--primary), 847px 105px var(--primary), 1519px 396px var(--primary), 901px 723px var(--primary), 1320px 885px var(--primary), 1008px 423px var(--primary), 1132px 1138px var(--primary), 1190px 631px var(--primary), 922px 452px var(--primary), 559px 78px var(--primary), 1452px 340px var(--primary), 196px 864px var(--primary), 954px 1420px var(--primary), 436px 1426px var(--primary), 1046px 1835px var(--primary), 1457px 1413px var(--primary), 386px 1167px var(--primary), 1138px 125px var(--primary), 416px 428px var(--primary), 1603px 1573px var(--primary), 654px 1632px var(--primary), 137px 10px var(--primary), 476px 834px var(--primary), 1448px 1251px var(--primary), 1419px 1261px var(--primary), 1711px 263px var(--primary), 271px 207px var(--primary), 1213px 611px var(--primary), 981px 609px var(--primary), 1798px 422px var(--primary), 1086px 262px var(--primary), 123px 1954px var(--primary), 281px 265px var(--primary), 679px 1374px var(--primary), 3px 1336px var(--primary), 270px 1457px var(--primary), 787px 1081px var(--primary), 1360px 1022px var(--primary), 288px 1080px var(--primary), 123px 76px var(--primary), 1879px 849px var(--primary), 1724px 1462px var(--primary), 1355px 330px var(--primary), 1836px 1538px var(--primary), 1713px 1912px var(--primary), 1659px 923px var(--primary), 588px 504px var(--primary), 429px 1969px var(--primary), 996px 699px var(--primary), 281px 152px var(--primary), 682px 283px var(--primary), 962px 1941px var(--primary), 875px 247px var(--primary), 1919px 459px var(--primary), 1166px 994px var(--primary), 1028px 1959px var(--primary), 485px 418px var(--primary), 1250px 621px var(--primary), 245px 952px var(--primary), 1300px 236px var(--primary), 1084px 450px var(--primary), 467px 635px var(--primary), 1506px 753px var(--primary), 937px 1036px var(--primary), 1624px 213px var(--primary), 12px 1351px var(--primary), 1069px 1559px var(--primary), 1760px 217px var(--primary), 794px 1985px var(--primary), 1970px 772px var(--primary), 1448px 1460px var(--primary), 1285px 807px var(--primary), 1560px 593px var(--primary), 1685px 1334px var(--primary), 1661px 1052px var(--primary), 1557px 1859px var(--primary), 125px 1222px var(--primary), 1870px 998px var(--primary), 373px 409px var(--primary), 1507px 376px var(--primary), 1933px 1557px var(--primary), 1086px 1329px var(--primary), 470px 1156px var(--primary), 1796px 419px var(--primary), 243px 579px var(--primary), 1444px 1109px var(--primary), 574px 71px var(--primary), 1771px 622px var(--primary), 1644px 1895px var(--primary), 911px 740px var(--primary), 878px 861px var(--primary), 1045px 292px var(--primary), 1262px 1780px var(--primary), 342px 1495px var(--primary), 502px 1278px var(--primary), 1891px 1299px var(--primary), 476px 269px var(--primary), 1758px 689px var(--primary), 1293px 553px var(--primary), 405px 791px var(--primary), 820px 1260px var(--primary), 1029px 1464px var(--primary), 623px 746px var(--primary), 160px 1801px var(--primary), 606px 197px var(--primary), 191px 1456px var(--primary), 468px 539px var(--primary), 1280px 1892px var(--primary), 1926px 1699px var(--primary), 255px 708px var(--primary), 1678px 835px var(--primary), 818px 34px var(--primary), 630px 1966px var(--primary), 1499px 1355px var(--primary), 1923px 892px var(--primary), 1229px 1215px var(--primary), 1584px 1418px var(--primary), 1184px 1404px var(--primary), 169px 1301px var(--primary), 1338px 1317px var(--primary), 30px 1290px var(--primary), 824px 1134px var(--primary), 1733px 1910px var(--primary), 443px 1072px var(--primary), 1817px 1921px var(--primary), 1939px 1194px var(--primary), 901px 615px var(--primary), 1827px 1004px var(--primary), 459px 220px var(--primary), 1640px 1193px var(--primary), 1090px 765px var(--primary), 821px 464px var(--primary), 1305px 607px var(--primary), 1355px 1481px var(--primary), 1112px 1482px var(--primary), 176px 1173px var(--primary), 915px 1122px var(--primary), 608px 1314px var(--primary), 733px 1941px var(--primary), 759px 1608px var(--primary), 659px 557px var(--primary), 1303px 1732px var(--primary), 1792px 1673px var(--primary), 1631px 33px var(--primary), 94px 1837px var(--primary), 1895px 1393px var(--primary), 608px 1161px var(--primary), 1081px 1686px var(--primary), 917px 792px var(--primary), 877px 1254px var(--primary), 437px 1473px var(--primary), 830px 711px var(--primary), 828px 1439px var(--primary), 1600px 119px var(--primary), 524px 1193px var(--primary), 1032px 213px var(--primary), 1262px 3px var(--primary), 861px 1190px var(--primary), 1847px 496px var(--primary), 990px 157px var(--primary), 1218px 613px var(--primary), 1451px 133px var(--primary), 4px 739px var(--primary), 882px 369px var(--primary), 455px 1801px var(--primary), 1511px 725px var(--primary), 1402px 178px var(--primary), 1336px 648px var(--primary), 794px 680px var(--primary), 1610px 390px var(--primary), 1363px 1888px var(--primary), 1456px 1334px var(--primary), 521px 1565px var(--primary), 1867px 986px var(--primary), 1789px 1815px var(--primary), 1925px 690px var(--primary), 540px 1805px var(--primary), 1632px 217px var(--primary), 1262px 1677px var(--primary), 1922px 773px var(--primary), 1170px 1772px var(--primary), 807px 1821px var(--primary), 823px 1514px var(--primary), 205px 147px var(--primary), 138px 251px var(--primary), 325px 310px var(--primary), 1396px 789px var(--primary), 178px 1605px var(--primary), 27px 566px var(--primary), 773px 1936px var(--primary), 1631px 835px var(--primary), 816px 1013px var(--primary), 1563px 1226px var(--primary), 1106px 512px var(--primary), 1410px 1517px var(--primary), 1967px 1867px var(--primary), 1544px 1838px var(--primary), 810px 913px var(--primary), 1601px 1060px var(--primary), 1736px 467px var(--primary), 1443px 539px var(--primary), 1907px 10px var(--primary), 1409px 1747px var(--primary), 799px 1795px var(--primary), 402px 889px var(--primary), 1761px 626px var(--primary), 1225px 1555px var(--primary), 1070px 219px var(--primary), 377px 1168px var(--primary), 1993px 1541px var(--primary), 476px 675px var(--primary), 552px 1250px var(--primary), 985px 1433px var(--primary), 1360px 526px var(--primary), 12px 793px var(--primary), 688px 456px var(--primary), 1117px 1249px var(--primary), 1207px 109px var(--primary), 1318px 515px var(--primary), 953px 1535px var(--primary), 931px 1729px var(--primary), 1286px 318px var(--primary), 906px 458px var(--primary), 74px 1962px var(--primary), 1205px 1698px var(--primary), 578px 1478px var(--primary), 195px 1485px var(--primary), 565px 1192px var(--primary), 429px 94px var(--primary), 970px 1321px var(--primary), 34px 957px var(--primary), 1287px 1735px var(--primary), 820px 1954px var(--primary), 18px 1042px var(--primary), 791px 1151px var(--primary), 1327px 345px var(--primary), 834px 1592px var(--primary), 748px 528px var(--primary), 1252px 1670px var(--primary), 1925px 1909px var(--primary), 1069px 581px var(--primary), 1358px 1288px var(--primary), 253px 1990px var(--primary), 1576px 65px var(--primary), 1106px 1569px var(--primary), 1213px 571px var(--primary), 1477px 1398px var(--primary), 1000px 16px var(--primary), 1541px 7px var(--primary);
+}
+
+#stars2 {
+  width: 3px;
+  height: 3px;
+  z-index: -1;
+  box-shadow: 29px 366px var(--primary), 521px 1736px var(--primary), 1980px 1243px var(--primary), 1452px 1627px var(--primary), 801px 1201px var(--primary), 614px 1494px var(--primary), 1574px 1213px var(--primary), 1406px 797px var(--primary), 468px 896px var(--primary), 1833px 1543px var(--primary), 638px 345px var(--primary), 1386px 1143px var(--primary), 739px 1349px var(--primary), 962px 1386px var(--primary), 290px 1063px var(--primary), 161px 111px var(--primary), 1069px 1598px var(--primary), 1783px 1300px var(--primary), 1557px 1351px var(--primary), 1579px 1152px var(--primary), 1564px 667px var(--primary), 1379px 335px var(--primary), 300px 159px var(--primary), 30px 262px var(--primary), 934px 1522px var(--primary), 287px 352px var(--primary), 1300px 1744px var(--primary), 1450px 765px var(--primary), 592px 1818px var(--primary), 866px 1645px var(--primary), 1524px 1552px var(--primary), 1364px 129px var(--primary), 1804px 468px var(--primary), 494px 984px var(--primary), 616px 919px var(--primary), 543px 256px var(--primary), 1550px 467px var(--primary), 1392px 725px var(--primary), 832px 752px var(--primary), 1996px 1647px var(--primary), 1895px 212px var(--primary), 804px 978px var(--primary), 343px 1441px var(--primary), 1689px 1408px var(--primary), 631px 1946px var(--primary), 408px 1621px var(--primary), 435px 1693px var(--primary), 481px 962px var(--primary), 1462px 10px var(--primary), 162px 374px var(--primary), 1731px 209px var(--primary), 1761px 327px var(--primary), 1583px 571px var(--primary), 577px 1129px var(--primary), 1112px 1192px var(--primary), 141px 937px var(--primary), 467px 1153px var(--primary), 261px 559px var(--primary), 384px 550px var(--primary), 1759px 633px var(--primary), 214px 1536px var(--primary), 1127px 827px var(--primary), 1774px 1862px var(--primary), 1171px 115px var(--primary), 690px 1670px var(--primary), 1140px 285px var(--primary), 1358px 1304px var(--primary), 1909px 1307px var(--primary), 13px 1053px var(--primary), 192px 1591px var(--primary), 28px 803px var(--primary), 223px 402px var(--primary), 1604px 99px var(--primary), 793px 1431px var(--primary), 78px 70px var(--primary), 574px 708px var(--primary), 1767px 906px var(--primary), 1161px 1252px var(--primary), 1504px 169px var(--primary), 1268px 451px var(--primary), 1280px 923px var(--primary), 1853px 1512px var(--primary), 1169px 1525px var(--primary), 260px 1864px var(--primary), 1947px 310px var(--primary), 493px 408px var(--primary), 1115px 1445px var(--primary), 1667px 529px var(--primary), 1387px 1387px var(--primary), 841px 901px var(--primary), 856px 997px var(--primary), 694px 1919px var(--primary), 1229px 992px var(--primary), 1877px 1037px var(--primary), 1410px 1960px var(--primary), 1057px 1188px var(--primary), 1216px 42px var(--primary), 461px 104px var(--primary), 1408px 594px var(--primary), 1098px 718px var(--primary), 184px 1739px var(--primary), 176px 1598px var(--primary), 31px 837px var(--primary), 452px 171px var(--primary), 394px 772px var(--primary), 90px 1308px var(--primary), 890px 979px var(--primary), 1768px 1523px var(--primary), 1508px 783px var(--primary), 126px 1536px var(--primary), 1073px 1021px var(--primary), 1581px 1197px var(--primary), 168px 1722px var(--primary), 497px 1848px var(--primary), 1818px 323px var(--primary), 1806px 1670px var(--primary), 1282px 726px var(--primary), 188px 671px var(--primary), 323px 1030px var(--primary), 1648px 1904px var(--primary), 1127px 537px var(--primary), 1366px 1637px var(--primary), 146px 978px var(--primary), 1428px 1431px var(--primary), 736px 1643px var(--primary), 1684px 588px var(--primary), 1960px 784px var(--primary), 1401px 762px var(--primary), 1307px 1291px var(--primary), 735px 690px var(--primary), 1232px 1368px var(--primary), 1842px 976px var(--primary), 1543px 1880px var(--primary), 1410px 1966px var(--primary), 1612px 1458px var(--primary), 1568px 410px var(--primary), 132px 1617px var(--primary), 1887px 1832px var(--primary), 1602px 77px var(--primary), 1064px 12px var(--primary), 203px 1033px var(--primary), 392px 1095px var(--primary), 1334px 1794px var(--primary), 1392px 513px var(--primary), 166px 10px var(--primary), 1325px 1644px var(--primary), 1039px 250px var(--primary), 960px 1670px var(--primary), 901px 1422px var(--primary), 1422px 408px var(--primary), 1822px 1787px var(--primary), 1620px 1764px var(--primary), 1630px 903px var(--primary), 1553px 346px var(--primary), 444px 1933px var(--primary), 1626px 1592px var(--primary), 331px 376px var(--primary), 283px 674px var(--primary), 1583px 257px var(--primary), 282px 879px var(--primary), 1249px 719px var(--primary), 1654px 1820px var(--primary), 280px 1192px var(--primary), 1333px 1840px var(--primary), 1811px 735px var(--primary), 6px 1232px var(--primary), 669px 1700px var(--primary), 1815px 941px var(--primary), 240px 700px var(--primary), 1003px 199px var(--primary), 1517px 732px var(--primary), 1455px 1357px var(--primary), 1624px 129px var(--primary), 585px 1px var(--primary), 489px 1640px var(--primary), 1524px 379px var(--primary), 1264px 1029px var(--primary), 1065px 1454px var(--primary), 1940px 1697px var(--primary), 1277px 790px var(--primary), 1578px 1978px var(--primary), 1241px 1087px var(--primary), 1211px 745px var(--primary), 1593px 541px var(--primary), 897px 643px var(--primary), 1882px 1794px var(--primary), 1110px 494px var(--primary), 1106px 383px var(--primary), 1864px 536px var(--primary), 424px 1080px var(--primary), 1303px 1518px var(--primary), 103px 679px var(--primary), 1548px 866px var(--primary), 1909px 1948px var(--primary), 1238px 42px var(--primary), 1102px 1965px var(--primary), 990px 1747px var(--primary), 1826px 1298px var(--primary), 360px 396px var(--primary), 78px 38px var(--primary);
+  animation: animStar 100s linear infinite;
+}
+
+#stars2:after {
+  content: " ";
+  position: absolute;
+  top: 2000px;
+  width: 3px;
+  height: 3px;
+  z-index: -1;
+  box-shadow: 29px 366px var(--primary), 521px 1736px var(--primary), 1980px 1243px var(--primary), 1452px 1627px var(--primary), 801px 1201px var(--primary), 614px 1494px var(--primary), 1574px 1213px var(--primary), 1406px 797px var(--primary), 468px 896px var(--primary), 1833px 1543px var(--primary), 638px 345px var(--primary), 1386px 1143px var(--primary), 739px 1349px var(--primary), 962px 1386px var(--primary), 290px 1063px var(--primary), 161px 111px var(--primary), 1069px 1598px var(--primary), 1783px 1300px var(--primary), 1557px 1351px var(--primary), 1579px 1152px var(--primary), 1564px 667px var(--primary), 1379px 335px var(--primary), 300px 159px var(--primary), 30px 262px var(--primary), 934px 1522px var(--primary), 287px 352px var(--primary), 1300px 1744px var(--primary), 1450px 765px var(--primary), 592px 1818px var(--primary), 866px 1645px var(--primary), 1524px 1552px var(--primary), 1364px 129px var(--primary), 1804px 468px var(--primary), 494px 984px var(--primary), 616px 919px var(--primary), 543px 256px var(--primary), 1550px 467px var(--primary), 1392px 725px var(--primary), 832px 752px var(--primary), 1996px 1647px var(--primary), 1895px 212px var(--primary), 804px 978px var(--primary), 343px 1441px var(--primary), 1689px 1408px var(--primary), 631px 1946px var(--primary), 408px 1621px var(--primary), 435px 1693px var(--primary), 481px 962px var(--primary), 1462px 10px var(--primary), 162px 374px var(--primary), 1731px 209px var(--primary), 1761px 327px var(--primary), 1583px 571px var(--primary), 577px 1129px var(--primary), 1112px 1192px var(--primary), 141px 937px var(--primary), 467px 1153px var(--primary), 261px 559px var(--primary), 384px 550px var(--primary), 1759px 633px var(--primary), 214px 1536px var(--primary), 1127px 827px var(--primary), 1774px 1862px var(--primary), 1171px 115px var(--primary), 690px 1670px var(--primary), 1140px 285px var(--primary), 1358px 1304px var(--primary), 1909px 1307px var(--primary), 13px 1053px var(--primary), 192px 1591px var(--primary), 28px 803px var(--primary), 223px 402px var(--primary), 1604px 99px var(--primary), 793px 1431px var(--primary), 78px 70px var(--primary), 574px 708px var(--primary), 1767px 906px var(--primary), 1161px 1252px var(--primary), 1504px 169px var(--primary), 1268px 451px var(--primary), 1280px 923px var(--primary), 1853px 1512px var(--primary), 1169px 1525px var(--primary), 260px 1864px var(--primary), 1947px 310px var(--primary), 493px 408px var(--primary), 1115px 1445px var(--primary), 1667px 529px var(--primary), 1387px 1387px var(--primary), 841px 901px var(--primary), 856px 997px var(--primary), 694px 1919px var(--primary), 1229px 992px var(--primary), 1877px 1037px var(--primary), 1410px 1960px var(--primary), 1057px 1188px var(--primary), 1216px 42px var(--primary), 461px 104px var(--primary), 1408px 594px var(--primary), 1098px 718px var(--primary), 184px 1739px var(--primary), 176px 1598px var(--primary), 31px 837px var(--primary), 452px 171px var(--primary), 394px 772px var(--primary), 90px 1308px var(--primary), 890px 979px var(--primary), 1768px 1523px var(--primary), 1508px 783px var(--primary), 126px 1536px var(--primary), 1073px 1021px var(--primary), 1581px 1197px var(--primary), 168px 1722px var(--primary), 497px 1848px var(--primary), 1818px 323px var(--primary), 1806px 1670px var(--primary), 1282px 726px var(--primary), 188px 671px var(--primary), 323px 1030px var(--primary), 1648px 1904px var(--primary), 1127px 537px var(--primary), 1366px 1637px var(--primary), 146px 978px var(--primary), 1428px 1431px var(--primary), 736px 1643px var(--primary), 1684px 588px var(--primary), 1960px 784px var(--primary), 1401px 762px var(--primary), 1307px 1291px var(--primary), 735px 690px var(--primary), 1232px 1368px var(--primary), 1842px 976px var(--primary), 1543px 1880px var(--primary), 1410px 1966px var(--primary), 1612px 1458px var(--primary), 1568px 410px var(--primary), 132px 1617px var(--primary), 1887px 1832px var(--primary), 1602px 77px var(--primary), 1064px 12px var(--primary), 203px 1033px var(--primary), 392px 1095px var(--primary), 1334px 1794px var(--primary), 1392px 513px var(--primary), 166px 10px var(--primary), 1325px 1644px var(--primary), 1039px 250px var(--primary), 960px 1670px var(--primary), 901px 1422px var(--primary), 1422px 408px var(--primary), 1822px 1787px var(--primary), 1620px 1764px var(--primary), 1630px 903px var(--primary), 1553px 346px var(--primary), 444px 1933px var(--primary), 1626px 1592px var(--primary), 331px 376px var(--primary), 283px 674px var(--primary), 1583px 257px var(--primary), 282px 879px var(--primary), 1249px 719px var(--primary), 1654px 1820px var(--primary), 280px 1192px var(--primary), 1333px 1840px var(--primary), 1811px 735px var(--primary), 6px 1232px var(--primary), 669px 1700px var(--primary), 1815px 941px var(--primary), 240px 700px var(--primary), 1003px 199px var(--primary), 1517px 732px var(--primary), 1455px 1357px var(--primary), 1624px 129px var(--primary), 585px 1px var(--primary), 489px 1640px var(--primary), 1524px 379px var(--primary), 1264px 1029px var(--primary), 1065px 1454px var(--primary), 1940px 1697px var(--primary), 1277px 790px var(--primary), 1578px 1978px var(--primary), 1241px 1087px var(--primary), 1211px 745px var(--primary), 1593px 541px var(--primary), 897px 643px var(--primary), 1882px 1794px var(--primary), 1110px 494px var(--primary), 1106px 383px var(--primary), 1864px 536px var(--primary), 424px 1080px var(--primary), 1303px 1518px var(--primary), 103px 679px var(--primary), 1548px 866px var(--primary), 1909px 1948px var(--primary), 1238px 42px var(--primary), 1102px 1965px var(--primary), 990px 1747px var(--primary), 1826px 1298px var(--primary), 360px 396px var(--primary), 78px 38px var(--primary);
+}
+
+#stars3 {
+  width: 4px;
+  height: 4px;
+  box-shadow: 481px 1024px var(--primary), 340px 1557px var(--primary), 54px 1787px var(--primary), 159px 1902px var(--primary), 463px 637px var(--primary), 856px 749px var(--primary), 131px 1194px var(--primary), 564px 722px var(--primary), 1270px 897px var(--primary), 1148px 968px var(--primary), 1982px 602px var(--primary), 1602px 633px var(--primary), 668px 1815px var(--primary), 54px 674px var(--primary), 788px 554px var(--primary), 329px 1372px var(--primary), 482px 1707px var(--primary), 791px 1953px var(--primary), 719px 1108px var(--primary), 295px 885px var(--primary), 374px 1606px var(--primary), 727px 93px var(--primary), 692px 159px var(--primary), 378px 1682px var(--primary), 1057px 926px var(--primary), 864px 1247px var(--primary), 946px 707px var(--primary), 1584px 1302px var(--primary), 1655px 1873px var(--primary), 120px 322px var(--primary), 746px 1994px var(--primary), 67px 1302px var(--primary), 258px 188px var(--primary), 40px 1473px var(--primary), 533px 1466px var(--primary), 771px 1260px var(--primary), 623px 121px var(--primary), 165px 876px var(--primary), 1015px 814px var(--primary), 1501px 1245px var(--primary), 1967px 1535px var(--primary), 150px 1850px var(--primary), 1675px 1265px var(--primary), 1141px 1944px var(--primary), 261px 740px var(--primary), 462px 282px var(--primary), 1910px 1489px var(--primary), 1214px 1885px var(--primary), 1312px 736px var(--primary), 207px 1989px var(--primary), 163px 1610px var(--primary), 630px 113px var(--primary), 608px 533px var(--primary), 1885px 1940px var(--primary), 602px 37px var(--primary), 105px 230px var(--primary), 811px 733px var(--primary), 311px 1986px var(--primary), 352px 902px var(--primary), 760px 1738px var(--primary), 86px 1122px var(--primary), 586px 1637px var(--primary), 1919px 1938px var(--primary), 1824px 857px var(--primary), 1983px 817px var(--primary), 326px 1188px var(--primary), 341px 1004px var(--primary), 1370px 645px var(--primary), 1369px 478px var(--primary), 740px 1950px var(--primary), 160px 1906px var(--primary), 1742px 499px var(--primary), 264px 1491px var(--primary), 107px 385px var(--primary), 1819px 1769px var(--primary), 1193px 1369px var(--primary), 384px 211px var(--primary), 348px 970px var(--primary), 1607px 771px var(--primary), 1521px 736px var(--primary), 1341px 1259px var(--primary), 985px 1993px var(--primary), 1013px 827px var(--primary), 1220px 784px var(--primary), 656px 511px var(--primary), 1031px 1677px var(--primary), 1624px 519px var(--primary), 1015px 1536px var(--primary), 586px 1149px var(--primary), 28px 1775px var(--primary), 358px 1198px var(--primary), 1663px 713px var(--primary), 530px 1980px var(--primary), 1181px 1142px var(--primary), 839px 1764px var(--primary), 1894px 1552px var(--primary), 1408px 987px var(--primary), 1528px 913px var(--primary), 1924px 165px var(--primary), 1876px 372px var(--primary);
+  animation: animStar 150s linear infinite;
+}
+
+#stars3:after {
+  content: " ";
+  position: absolute;
+  top: 2000px;
+  width: 4px;
+  height: 4px;
+  z-index: -1;
+  box-shadow: 481px 1024px var(--primary), 340px 1557px var(--primary), 54px 1787px var(--primary), 159px 1902px var(--primary), 463px 637px var(--primary), 856px 749px var(--primary), 131px 1194px var(--primary), 564px 722px var(--primary), 1270px 897px var(--primary), 1148px 968px var(--primary), 1982px 602px var(--primary), 1602px 633px var(--primary), 668px 1815px var(--primary), 54px 674px var(--primary), 788px 554px var(--primary), 329px 1372px var(--primary), 482px 1707px var(--primary), 791px 1953px var(--primary), 719px 1108px var(--primary), 295px 885px var(--primary), 374px 1606px var(--primary), 727px 93px var(--primary), 692px 159px var(--primary), 378px 1682px var(--primary), 1057px 926px var(--primary), 864px 1247px var(--primary), 946px 707px var(--primary), 1584px 1302px var(--primary), 1655px 1873px var(--primary), 120px 322px var(--primary), 746px 1994px var(--primary), 67px 1302px var(--primary), 258px 188px var(--primary), 40px 1473px var(--primary), 533px 1466px var(--primary), 771px 1260px var(--primary), 623px 121px var(--primary), 165px 876px var(--primary), 1015px 814px var(--primary), 1501px 1245px var(--primary), 1967px 1535px var(--primary), 150px 1850px var(--primary), 1675px 1265px var(--primary), 1141px 1944px var(--primary), 261px 740px var(--primary), 462px 282px var(--primary), 1910px 1489px var(--primary), 1214px 1885px var(--primary), 1312px 736px var(--primary), 207px 1989px var(--primary), 163px 1610px var(--primary), 630px 113px var(--primary), 608px 533px var(--primary), 1885px 1940px var(--primary), 602px 37px var(--primary), 105px 230px var(--primary), 811px 733px var(--primary), 311px 1986px var(--primary), 352px 902px var(--primary), 760px 1738px var(--primary), 86px 1122px var(--primary), 586px 1637px var(--primary), 1919px 1938px var(--primary), 1824px 857px var(--primary), 1983px 817px var(--primary), 326px 1188px var(--primary), 341px 1004px var(--primary), 1370px 645px var(--primary), 1369px 478px var(--primary), 740px 1950px var(--primary), 160px 1906px var(--primary), 1742px 499px var(--primary), 264px 1491px var(--primary), 107px 385px var(--primary), 1819px 1769px var(--primary), 1193px 1369px var(--primary), 384px 211px var(--primary), 348px 970px var(--primary), 1607px 771px var(--primary), 1521px 736px var(--primary), 1341px 1259px var(--primary), 985px 1993px var(--primary), 1013px 827px var(--primary), 1220px 784px var(--primary), 656px 511px var(--primary), 1031px 1677px var(--primary), 1624px 519px var(--primary), 1015px 1536px var(--primary), 586px 1149px var(--primary), 28px 1775px var(--primary), 358px 1198px var(--primary), 1663px 713px var(--primary), 530px 1980px var(--primary), 1181px 1142px var(--primary), 839px 1764px var(--primary), 1894px 1552px var(--primary), 1408px 987px var(--primary), 1528px 913px var(--primary), 1924px 165px var(--primary), 1876px 372px var(--primary);
+}
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px);
+  }
+
+  to {
+    transform: translateY(-2000px);
+  }
+}
+
+@keyframes text {
+  0% {
+    color: black;
+    margin-bottom: -40px;
+  }
+
+  30% {
+    letter-spacing: 25px;
+    margin-bottom: -40px;
+  }
+
+  85% {
+    letter-spacing: 8px;
+    margin-bottom: -40px;
+  }
+}
+
+.curved-line svg {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: var(--light);
+}
+
+section#about-me {
+  cursor: default;
+  padding: 10px 15px;
+  background-color: var(--light-secundary);
+  color: var(--primary);
+}
+
+section#about-me .about-me-title {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+section#about-me .profile-pic img {
+  border-radius: 50%;
+  width: 100%;
+  /* border: 0.2rem var(--orange) solid; */
+}
+
+.subtitles {
+  position: relative;
+  font-weight: 600;
+}
+
+section#portfolio .subtitles {
+  color: var(--primary);
+}
+
+.subtitles::after {
+  width: 50%;
+  margin: auto;
+  content: '';
+  left: 0;
+  position: absolute;
+  height: 4px;
+  right: 0%;
+  background-color: var(--orange);
+  border-radius: 12px;
+  bottom: -5px;
+}
+
+section#about-me .about-me-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+section#about-me .about-me-content-total {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+
+section#about-me .about-me-content__text .about-me-content__text__info {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 10px;
+}
+
+section#about-me .about-me-content__controls__btn-cv {
+  background-color: var(--orange);
+  color: white;
+  border: 2px solid var(--orange);
+  border-radius: 1rem;
+  padding: 20px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  font-size: 1.2rem;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+}
+
+section#about-me .about-me-content__controls__btn-cv:hover {
+  background-color: var(--light-secundary);
+  color: var(--orange);
+  box-shadow: 0 10px 36px rgb(0 0 0 / 15%);
+}
+
+section#skills {
+  cursor: default;
+  padding: 2rem 15px 0px 15px;
+  background-color: var(--light-secundary);
+  color: var(--primary);
+}
+
+section#skills p {
+  text-align: center;
+}
+
+section#skills .skills-content {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+section#skills .slick-next:before,
+section#skills .slick-prev:before {
+  display: none;
+}
+
+section#skills .skills-content__carousel-items {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+section#skills .skills-content__carousel-items h3 {
+  text-align: end;
+}
+
+section#skills .skills-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section#skills .slick-current {
+  transform: scale(1.15);
+  opacity: 1;
+  filter: none;
+  transition: 1s all;
+}
+
+section#skills .tools-slider .slick-slide {
+  filter: none;
+}
+
+.slick-slide {
+  filter: grayscale(100%);
+  opacity: .5;
+}
+
+.slick-active {
+  opacity: .5;
+
+}
+
+.curved-line-second svg {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: var(--light-secundary);
+}
+
+
+section#skills .slick-list {
+  text-align: center;
+}
+
+section#skills .tools-slider .slick-active,
+section#skills .tools-slider .slick-slide {
+  opacity: 1;
+}
+
+section#skills .tools-slider .slick-current {
+  transform: none;
+}
+
+section#skills .skills-content__carousel-items__img:focus-visible {
+  outline: none;
+}
+
+section#skills .skills-content__carousel-items__icon {
+  color: var(--orange);
+  font-size: 1.7rem;
+}
+
+section#skills .skills-content__carousel-items__tools {
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  font-size: 1.2rem;
+  justify-content: space-evenly;
+  height: 30%;
+}
+
+section#portfolio {
+  background: linear-gradient(0deg, var(--light-secundary), var(--light));
+  padding: 0 15px;
+}
+
+section#portfolio .portfolio-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+section#portfolio .portfolio-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section#portfolio .portfolio-items {
+  /* flex: 0 0 100%; */
+  /* justify-content: center;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem; */
+  justify-content: center;
+  max-width: 100%;
+  display: flex;
+  /* flex-wrap: wrap; */
+  grid-gap: 2rem;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+section#portfolio .portfolio-items .item {
+  /* flex: 0 0 33.33%;
+  max-width: 33.33%; */
+  position: relative;
+  /* padding: 8px; */
+}
+
+section#portfolio .portfolio-items .inner {
+  position: relative;
+}
+
+section#portfolio .portfolio-items .item img {
+  width: 100%;
+  display: block;
+  border-radius: 22px;
+  /* border: 1px solid rgb(51 51 51 / 18%); */
+}
+
+section#portfolio .portfolio-items .item .overlay {
+  display: none;
+}
+
+section#portfolio .portfolio-items .item .overlay-mobile {
+  position: absolute;
+  cursor: default;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  border: 2px solid rgb(0 0 0 / 22%);
+  box-shadow: 0 0 32px -8px #464646;
+  background-color: rgba(227, 232, 234, .75);
+  backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  z-index: 0;
+  border-radius: 22px;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  transition: all .5s ease;
+}
+
+section#portfolio .portfolio-items .item .overlay-mobile h5 {
+  font-weight: bolder;
+}
+
+section#portfolio .portfolio-items .item .overlay-mobile p {
+  color: rgb(48, 48, 48);
+  text-align: center;
+  width: 60%;
+}
+
+section#portfolio .portfolio-items .item .overlay-mobile a,
+section#portfolio .portfolio-items .item .overlay-mobile button {
+  border: 2px solid var(--orange);
+  background-color: transparent;
+  font-weight: 600;
+  font-size: 1.4em;
+  padding: 5px 20px;
+  color: var(--primary);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all .5s ease;
+}
+
+section#portfolio .portfolio-items .item .overlay-mobile a .fas,
+section#portfolio .portfolio-items .item .overlay-mobile button .fas {
+  color: var(--orange);
+  /* margin-right: 8px; */
+  /* font-size: 15px; */
+  transition: all .5s ease;
+}
+
+section#portfolio .portfolio-items .item .overlay-mobile .portfolio-items__item__buttons {
+  display: flex;
+  gap: 2rem;
+}
+
+.modal-project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5%;
+  gap: 2rem;
+}
+
+.modal-project h3 {
+  position: relative;
+}
+
+.modal-project h3::after {
+  width: 50%;
+  margin: auto;
+  content: '';
+  left: 0;
+  position: absolute;
+  height: 4px;
+  right: 0%;
+  background-color: var(--orange);
+  border-radius: 12px;
+  bottom: -5px;
+}
+
+.modal-project .modal-project__auth {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.modal-project a,
+.modal-project button {
+  border: 2px solid var(--orange);
+  background-color: transparent;
+  font-weight: 600;
+  font-size: 1.2em;
+  text-align: center;
+  width: 100%;
+  padding: 5px 20px;
+  color: var(--primary);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all .5s ease;
+}
+
+.modal-project a:hover,
+.modal-project a:hover .fas,
+.modal-project button:hover {
+  box-shadow: 0 0 0 2em var(--primary) inset;
+  color: var(--light-secundary) !important;
+}
+
+.modal-project .modal-project__btns {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.modal-project a .fas {
+  color: var(--primary);
+  transition: all .5s ease;
+}
+
+section#contact .contact-content__social-networks {
+  cursor: pointer;
+}
+
+section#contact {
+  padding: 10% 15px;
+  background: var(--light-secundary);
+  color: var(--secundary);
+}
+
+section#contact .contact-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+section#contact .contact-title {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+section#contact .contact-content__social-networks__item {
+  background-color: var(--orange);
+  color: white;
+  border: 2px solid var(--orange);
+  border-radius: 1rem;
+  padding: 20px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.1rem;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+
+}
+
+section#contact .contact-content__social-networks__item:hover {
+  background-color: var(--light-secundary);
+  color: var(--orange);
+  box-shadow: 0 10px 36px rgb(0 0 0 / 15%);
+}
+
+section#contact .contact-content__social-networks__item i {
+  font-size: 2rem;
+}
+
+section#contact .contact-content__social-networks {
+  display: flex;
+  flex-direction: column;
+}
+
+/* 
+
+section#portfolio .portfolio-items .item:hover .overlay p {
+  -webkit-animation: galleryP .8s ease;
+  animation: galleryP .8s ease;
+}
+
+@keyframes galleryP {
+  0% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+} */
+
+.bg-stars {
+  width: 100%;
+  position: absolute;
+}
+
+.scroll-btns {
+  z-index: 1;
+  position: fixed;
+  right: 20px;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  bottom: 11vh;
+  color: var(--primary);
+  cursor: pointer;
+}
+
+.scroll-btns i:hover {
+  color: var(--orange);
+}
+
+@media (min-width: 768px) {
+  section#home .home-content .content-logo {
+    margin-left: 2%;
+  }
+
+  section#home .home-title {
+    width: 95%;
+    top: 10%;
+  }
+
+  section#home .home-content .content-logo {
+    top: 31%;
+    width: 200px;
+    height: 32%;
+  }
+
+  section#home .home-title__icons {
+    font-size: 2.2rem;
+    width: 5%;
+  }
+
+  section#home .home-content .home-logo-animation svg {
+    width: 200px;
+    height: 200px;
+  }
+
+  section#home .home-title h3 {
+    font-size: 2.1rem;
+  }
+
+  section#home .home-title .surname {
+    font-size: 2.5rem;
+  }
+
+  section#home .home-title .name {
+    font-size: 2.5rem;
+  }
+
+  section#home .primary-rol,
+  section#home .secundary-rol {
+    font-size: 1.7rem;
+  }
+
+  section#about-me {
+    padding: 5% 6%;
+    background-color: var(--light-secundary);
+    width: 88%;
+    border-radius: 25px;
+    margin: 6rem auto;
+  }
+
+  section#about-me .about-me-title .profile-pic {
+    display: flex;
+    justify-content: center;
+  }
+
+  section#about-me .about-me-title .profile-pic img {
+    width: 50%;
+  }
+
+  section#skills {
+    width: 88%;
+    padding: 5% 6%;
+    border-radius: 25px;
+    margin: auto;
+  }
+
+  section#skills .skills-content__carousel-items__tools {
+    font-size: 1.3rem;
+    height: 34%;
+  }
+
+  section#skills .skills-content__carousel-items__img {
+    width: 60% !important;
+  }
+
+  section#portfolio {
+    background: linear-gradient(0deg, var(--light), var(--light-secundary));
+  }
+
+  section#portfolio .portfolio-title {
+    align-self: center;
+  }
+
+  section#portfolio .portfolio-items .item {
+    /* max-width: 60%; */
+    max-width: 60%;
+  }
+
+  section#portfolio .portfolio-content .item:nth-child(odd) {
+    align-self: end;
+  }
+
+  section#portfolio .portfolio-content .item:nth-child(even) {
+    align-self: start;
+  }
+
+  section#portfolio .portfolio-items .item .overlay-mobile {
+    display: none;
+  }
+
+  section#portfolio .portfolio-items .item:nth-child(even) .overlay {
+    display: flex;
+    position: absolute;
+    right: -66%;
+    top: 0;
+    bottom: 0;
+    margin: auto 0px;
+    justify-content: center;
+    width: 100%;
+    height: 150px;
+    border-radius: 15px;
+    text-align: center;
+    flex-direction: column;
+    border: 1px solid rgb(0 0 0 / 22%);
+    box-shadow: 0 0 32px -8px #464646;
+    background-color: rgba(227, 232, 234, .75);
+    backdrop-filter: saturate(180%) blur(20px);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+  }
+
+  section#portfolio .portfolio-items .item:nth-child(odd) .overlay {
+    display: flex;
+    position: absolute;
+    left: -66%;
+    top: 0;
+    bottom: 0;
+    margin: auto 0px;
+    justify-content: center;
+    width: 100%;
+    height: 150px;
+    border-radius: 15px;
+    text-align: center;
+    flex-direction: column;
+    border: 1px solid rgb(0 0 0 / 22%);
+    box-shadow: 0 0 32px -8px #464646;
+    background-color: rgba(227, 232, 234, .75);
+    backdrop-filter: saturate(180%) blur(20px);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+  }
+
+  section#portfolio .portfolio-items .item .overlay span {
+    color: var(--orange);
+  }
+
+  section#portfolio .portfolio-items .item .overlay p {
+    text-align: center;
+  }
+
+  section#portfolio .portfolio-items .item .overlay .overlay__btns {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  section#portfolio .portfolio-items .item .overlay .overlay__btns button,
+  section#portfolio .portfolio-items .item .overlay .overlay__btns a {
+    border: 2px solid var(--orange);
+    background-color: transparent;
+    font-weight: 600;
+    padding: 5px 32px;
+    color: var(--orange);
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
+  .modal-project .modal-project__btns {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    width: 70%;
+  }
+
+  section#contact {
+    background: linear-gradient(0deg, var(--light-secundary), var(--light));
+  }
+
+  .curved-line-second {
+    padding-top: 10%;
+  }
+
+  .curved-line-second svg {
+    background-color: unset;
+  }
+
+  .curved-line-second svg path {
+    fill: var(--light-secundary);
+  }
+
+  .curved-line {
+    display: none;
+  }
+
+  .scroll-top-btn {
+    position: fixed;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    right: 60px;
+    bottom: 50px;
+    z-index: 100;
+    text-align: end;
+    font-size: 3rem;
+    cursor: pointer;
+    color: var(--primary)
+  }
+
+  .scroll-top-btn .ion-chevron-up {
+    display: block !important;
+  }
+
+  .scroll-btns {
+    bottom: 2vh;
+  }
+}
+
+@media (min-width: 1360px) {
+  main {
+    padding-bottom: 10%;
+  }
+
+  section#home .home-title__icons {
+    width: 2%;
+  }
+
+  section#home .home-content .content-logo {
+    margin-left: 1%;
+  }
+
+  section#about-me {
+    width: 65%;
+  }
+
+  section#skills {
+    width: 65%;
+  }
+
+  section#skills .skills-content__carousel-items__tools {
+    height: 31%;
+  }
+
+  section#portfolio .portfolio-items {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  section#portfolio .portfolio-items .item {
+    max-width: 45%;
+  }
+
+  section#portfolio .portfolio-items .item:nth-child(odd) .overlay {
+    left: 0;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    gap: 2rem;
+    opacity: 0;
+    transition: all .5s ease;
+  }
+
+  section#portfolio .portfolio-items .item:nth-child(even) .overlay {
+    right: 0;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    gap: 2rem;
+    opacity: 0;
+    transition: all .5s ease;
+  }
+
+  section#portfolio .portfolio-items .item:hover .overlay {
+    opacity: 1;
+  }
+
+  section#portfolio .portfolio-items .item .overlay .overlay__btns button,
+  section#portfolio .portfolio-items .item .overlay .overlay__btns a {
+    border: 2px solid rgb(165, 58, 59);
+    background-color: transparent;
+    font-weight: 600;
+    /* font-size: 14px; */
+    padding: 5px 20px;
+    color: rgb(165, 58, 59);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all .5s ease;
+  }
+
+  section#portfolio .portfolio-items .item .overlay .overlay__btns button {
+    padding: 5px 32px;
+  }
+
+  section#portfolio .portfolio-items .item .overlay a:hover,
+  section#portfolio .portfolio-items .item .overlay button:hover {
+    box-shadow: 0 0 0 2em var(--primary) inset;
+    color: var(--light-secundary);
+  }
+
+  section#portfolio .portfolio-items .item .overlay a .fas,
+  section#portfolio .portfolio-items .item .overlay button .fas {
+    color: var(--orange);
+    margin-right: 8px;
+    /* font-size: 15px; */
+    transition: all .5s ease;
+  }
+
+  section#portfolio .portfolio-items .item .overlay a:hover .fas,
+  section#portfolio .portfolio-items .item .overlay button:hover .fas {
+    color: var(--light-secundary);
+  }
+
+  section#portfolio .portfolio-items .item:hover .overlay p {
+    animation: galleryP .8s ease;
+  }
+
+  section#portfolio .portfolio-items .item:hover .overlay a,
+  section#portfolio .portfolio-items .item:hover .overlay button {
+    -webkit-animation: galleryIcon .8s ease;
+    animation: galleryIcon .8s ease;
+  }
+
+  @keyframes galleryP {
+    0% {
+      transform: scale(1.5);
+      opacity: 0;
+    }
+
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes galleryIcon {
+    0% {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  section#portfolio .portfolio-items .item .overlay h5 {
+    display: inline-block;
+    padding-bottom: 5px;
+    font-size: 1.3rem;
+    color: rgb(48, 48, 48);
+    font-weight: 900;
+    position: relative;
+  }
+
+
+  section#portfolio .portfolio-items .item:hover .overlay h5 {
+    -webkit-animation: galleryText .8s ease;
+    animation: galleryText .8s ease;
+  }
+
+  @keyframes galleryText {
+    0% {
+      transform: translateY(-20px);
+      opacity: 0;
+    }
+
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  section#contact {
+    background: var(--light-secundary);
+    width: 65%;
+    margin: auto;
+    border-radius: 25px;
+    padding: 5%;
+    border: 1px solid rgb(0 0 0 / 22%);
+    box-shadow: -10px 10px 12px -10px var(--primary);
+    margin-top: 5%;
+  }
+}
